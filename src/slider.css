@@ -1,34 +1,58 @@
+/* Carousel Controls */
 .carousel .control-arrow {
     width: 34px;
     height: 34px;
     top: 50% !important;
+    -webkit-transform: translateY(-50%); /* Safari 9+ */
+    -ms-transform: translateY(-50%); /* Edge 12+ */
     transform: translateY(-50%);
     border-radius: 50%;
     display: flex;
+    -webkit-box-align: center; /* Safari 3.1 - 9 */
+    -webkit-align-items: center; /* Safari 10+ */
+    -ms-flex-align: center; /* Edge 12+ */
     align-items: center;
+    -webkit-box-pack: center; /* Safari 3.1 - 9 */
+    -webkit-justify-content: center; /* Safari 10+ */
+    -ms-flex-pack: center; /* Edge 12+ */
     justify-content: center;
-}
-.carousel .control-prev.control-arrow:before {
-    border-right: 8px solid #000;
-}
-.carousel .control-next.control-arrow:before {
-    border-left: 8px solid #000;
-}
-.carousel .control-prev {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 20px;
+    z-index: 1; /* Ensure the controls appear above the carousel content */
+    transition: background-color 0.3s;
+  }
+  
+  .carousel .control-prev.control-arrow:before {
+    content: "←"; /* Use an arrow character instead of border */
+  }
+  
+  .carousel .control-next.control-arrow:before {
+    content: "→"; /* Use an arrow character instead of border */
+  }
+  
+  .carousel .control-prev {
     left: 25px !important;
-}
-.carousel .control-next {
+  }
+  
+  .carousel .control-next {
     right: 25px !important;
-}
-.carousel .carousel-status {
+  }
+  
+  /* Carousel Status */
+  .carousel .carousel-status {
     text-shadow: none;
     color: #aaaaaa;
     padding: 20px;
     font-size: 16px;
-}
-
-@media screen and (max-width: 767px) {
+  }
+  
+  /* Hide Controls on Small Screens */
+  @media screen and (max-width: 767px) {
     .carousel .control-arrow {
-        display: none;
+      display: none;
     }
-}
+  }
+  

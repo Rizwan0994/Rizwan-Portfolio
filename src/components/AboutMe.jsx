@@ -24,7 +24,7 @@ const AboutMe = () => {
 
             <Wrapper>
                 {/* HEADING START */}
-                <Div className="text-[40px] md:text-[90px] 2xl:text-[120px] leading-[52px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase mb-[25px] md:mb-[40px] 2xl:mb-[60px] flex flex-col relative">
+                <Div className="text-[40px] md:text-[90px] 2xl:text-[90px] leading-[52px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase mb-[25px] md:mb-[40px] 2xl:mb-[60px] flex flex-col relative">
                     <span>A software developer</span>
                     <span className="flex items-center gap-2">
                         <span>Based</span>

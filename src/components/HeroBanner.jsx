@@ -49,7 +49,7 @@ const HeroBanner = () => {
             <Wrapper>
                 {/* NAVBAR START */}
                 <motion.div
-                    className="hidden md:flex items-center justify-between mt-[40px] 2xl:mt-[63px] relative"
+                    className="hidden md:flex items-center justify-between mt-[15px] 2xl:mt-[15px] relative"
                     initial={{ y: -200, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.25 }}
@@ -96,7 +96,7 @@ const HeroBanner = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="text-[50px] md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
+                    <h1 className="text-[50px] md:text-[120px] 2xl:text-[120px] leading-[50px] md:leading-[125px]  2xl:leading-[140px] font-oswald uppercase">
                         I Am A Software
                         <br className="invisible md:visible" />
                         Engineer
@@ -157,7 +157,7 @@ const HeroBanner = () => {
 
                 {/* PERSON BLOCK START */}
                 <motion.div
-                    className="w-[300px] md:w-[360px] 2xl:w-[475px] absolute bottom-0 left-[50%] -translate-x-1/2"
+                    className="w-[300px] md:w-[360px] 2xl:w-[350px] absolute bottom-0 left-[50%] -translate-x-1/2"
                     initial={{ y: 200, x: "-50%" }}
                     animate={{ y: 0 }}
                     transition={{ duration: 0.5 }}
