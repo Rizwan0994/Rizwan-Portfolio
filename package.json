@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -u \"github-actions-bot <support+actions@github.com>\"",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "test": "echo \"No tests available\"",
