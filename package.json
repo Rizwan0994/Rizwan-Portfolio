@@ -8,6 +8,7 @@
     "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
+    "test": "echo \"No tests available\"",
     "preview": "vite preview"
   },
   "dependencies": {
